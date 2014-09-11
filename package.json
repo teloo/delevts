@@ -1,0 +1,24 @@
+{
+  "name": "delevts",
+  "version": "0.1.0",
+  "description": "Delevts deletes all events in the calendar application.",
+  "author": "teloo",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/teloo/delevts/blob/master/LICENSE"
+    }
+  ],
+  "repository": "teloo/delevts",
+  "main": "lib",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "delevts-plugin-salesforce": "0.1.0"
+  },
+  "bin": {
+    "delevts": "bin/delevts"
+  },
+  "preferGlobal": true
+}
