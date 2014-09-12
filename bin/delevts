@@ -1,0 +1,11 @@
+#!/usr/bin/env node
+
+var delevts = require('../lib');
+var cli = require('cli').enable('version', 'help');
+
+cli.parse({
+});
+
+cli.main(function(args, options) {
+  delevts.execute(args[0], args[1]);
+});

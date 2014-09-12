@@ -15,7 +15,8 @@
     "node": ">=0.10.0"
   },
   "dependencies": {
-    "delevts-plugin-salesforce": "0.1.0"
+    "delevts-plugin-salesforce": "0.1.0",
+    "cli": "0.6.4"
   },
   "bin": {
     "delevts": "bin/delevts"
