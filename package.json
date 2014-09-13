@@ -16,7 +16,8 @@
   },
   "dependencies": {
     "delevts-plugin-salesforce": "0.0.1",
-    "cli": "0.6.4"
+    "cli": "0.6.4",
+    "underscore": "1.7.0"
   },
   "devDependencies": {
     "grunt": "0.4.5",

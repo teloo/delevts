@@ -2,15 +2,19 @@
 
 var delevts = require('../lib');
 var cli = require('cli').enable('version', 'help', 'status');
+var _ = require('underscore');
 
 cli.parse({
 });
 
 cli.main(function(args, options) {
-  delevts.execute(args[0], args[1], function(err) {
+  delevts.execute(args[0], args[1], function(err, count) {
     if (err) {
       cli.error(err.message);
       return;
+    }
+    if (_.isNumber(count)) {
+      cli.info('Deleted ' + count + ' events');
     }
   });
 });
