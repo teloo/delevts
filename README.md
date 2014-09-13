@@ -1,4 +1,4 @@
-Delevts
+Delevts [![Build Status](https://travis-ci.org/teloo/delevts.svg?branch=master)](https://travis-ci.org/teloo/delevts)
 =======
 
 Delevts deletes all events in the calendar application.
