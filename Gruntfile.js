@@ -1,7 +1,8 @@
 module.exports = function(grunt) {
   var jsFiles = [
     'bin/delevts',
-    'lib/**/*.js'
+    'lib/**/*.js',
+    'test/**/*.js'
   ];
 
   grunt.initConfig({
@@ -9,6 +10,15 @@ module.exports = function(grunt) {
       scripts: {
         files: jsFiles,
         tasks: ['default']
+      }
+    },
+    simplemocha: {
+      options: {
+        reporter: 'spec',
+        timeout: '5000'
+      },
+      full: {
+        src: ['test/test.js']
       }
     },
     jshint: {
@@ -20,8 +30,10 @@ module.exports = function(grunt) {
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-simple-mocha');
   grunt.loadNpmTasks('grunt-contrib-jshint');
 
   grunt.registerTask('hint', ['jshint']);
-  grunt.registerTask('default', ['hint']);
+  grunt.registerTask('test', ['simplemocha']);
+  grunt.registerTask('default', ['hint', 'test']);
 };
