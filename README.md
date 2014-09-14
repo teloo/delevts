@@ -13,6 +13,7 @@ $ npm install -g delevts
 
 Read each plugin pages.
 
+* [Google Calendar](https://github.com/teloo/delevts-plugin-google)
 * [Salesforce](https://github.com/teloo/delevts-plugin-salesforce)
 
 ## License

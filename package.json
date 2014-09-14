@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "delevts-plugin-salesforce": "0.0.x",
+    "delevts-plugin-google": "0.0.x",
     "cli": "0.6.4",
     "underscore": "1.7.0"
   },
