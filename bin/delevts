@@ -14,7 +14,7 @@ cli.main(function(args, options) {
       return;
     }
     if (_.isNumber(count)) {
-      cli.info('Deleted ' + count + ' events');
+      console.log('Deleted ' + count + ' events');
     }
   });
 });
