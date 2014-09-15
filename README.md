@@ -3,6 +3,14 @@ Delevts [![Build Status](https://travis-ci.org/teloo/delevts.svg?branch=master)]
 
 Delevts deletes all events in the calendar application.
 
+## Background
+
+I'm a software engineer creating an application which uses calendar application apis.
+
+I sometimes clean calendar applications after test.
+
+So, I created Delevts.
+
 ## Installation
 
 ```shell
