@@ -5,8 +5,7 @@ Delevts deletes all events in the calendar application.
 
 ## Background
 
-I'm a software engineer creating an application which uses calendar application apis.
-
+I'm a software engineer creating an application which uses calendar application apis.  
 I sometimes clean calendar applications after test.
 
 So, I created Delevts.
