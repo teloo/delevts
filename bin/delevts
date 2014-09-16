@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 var delevts = require('../lib');
-var cli = require('cli').enable('version', 'help', 'status');
+var packageInfo = require('../package.json');
+var cli = require('cli').enable('version', 'help', 'status').setApp(packageInfo.name, packageInfo.version);
 var _ = require('underscore');
 
 cli.parse({
